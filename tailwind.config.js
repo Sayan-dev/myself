@@ -33,6 +33,7 @@ module.exports = {
         'background-light': 'var(--background-light)',
         'background-dark': 'var(--background-dark)',
         'primary-2': 'var(--primary-2)',
+        'primary-light': 'var(--primary-light)',
         'red': 'var(--red)',
         'green': 'var(--green)',
       },
