@@ -28,6 +28,7 @@ module.exports = {
         'dark-line': 'var(--dark-line)',
         'faded-dark': 'var(--faded-dark)',
         'light-grey': 'var(--light-grey)',
+        'faded-black': 'var(--faded-black)',
         'faded-blue': 'var(--faded-blue)',
         'background-light': 'var(--background-light)',
         'background-dark': 'var(--background-dark)',
@@ -38,7 +39,12 @@ module.exports = {
       backgroundImage: {
         'review-card': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
         'review-card-closed': 'linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+
       },
+      boxShadow: {
+        'skill-bubble': '0 4px 50px 0 var(--faded-black)',
+      }
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],
