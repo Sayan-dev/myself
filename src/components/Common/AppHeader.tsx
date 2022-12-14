@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo.png'
 
 const AppHeader = () => {
   return (
-    <Header className="hidden">
+    <Header height={95} className="hidden">
     <Box className="mx-auto bg-background-dark relative">
       <Group className="flex flex-row	justify-between md:justify-start items-center px-[16px] py-[25px] md:p-[25px]">
         <Box className="flex justify-center items-center p-2 md:p-3 rounded-full border bg-light w-[45px] h-[45px]">
