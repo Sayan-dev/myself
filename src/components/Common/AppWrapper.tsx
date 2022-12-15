@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppShell, Box } from '@mantine/core';
-import AppHeader from './AppHeader';
+import Footer from '../Layouts/Footer';
 
 type AppWrapperProps = {
   children: React.ReactNode;
@@ -14,11 +14,12 @@ const AppWrapper = ({ children }: AppWrapperProps) => {
         asideOffsetBreakpoint="sm"
         // navbar={<SideNavbar handleLogout={handleLogout} opened={opened} />}
         // header={<AppHeader handleLogout={handleLogout} setOpened={setNavigationOpen} />}
-        header={<AppHeader />}
+        // header={<AppHeader />}
         fixed
       >
         <Box className="my-auto">{children}</Box>
       </AppShell>
+      <Footer/>
     </Box>
   );
 };
