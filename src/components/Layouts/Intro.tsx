@@ -761,9 +761,7 @@ const Intro = () => {
         <div className="py-2 px-5 mt-5 mb-5 w-fit rounded-[10px] bg-primary-2 text-primary text-sm font-bold">
           🧑‍💻 Skills
         </div>
-        <div className="font-semibold w-[10rem] text-2xl text-white">
-          Technologies and skills
-        </div>
+        <div className="font-semibold w-[10rem] text-2xl text-white">Technologies and skills</div>
         <Box>
           <div className="text-faded my-10 text-lg">Techs I use daily</div>
           <Carousel
@@ -771,6 +769,7 @@ const Intro = () => {
             align="start"
             slideSize="5%"
             height="auto"
+            sx={{ maxWidth: '90vw' }}
             slideGap="md"
             dragFree
             withControls={false}
@@ -1032,8 +1031,10 @@ const Intro = () => {
           <Carousel
             className="mt-5"
             align="start"
-            slideSize="5%"
+            slideSize="20%"
             height="auto"
+            sx={{maxWidth: "90vw"}}
+
             slideGap="md"
             dragFree
             withControls={false}
@@ -1195,6 +1196,7 @@ const Intro = () => {
           <Carousel
             className="mt-5"
             align="start"
+            sx={{ maxWidth: '90vw' }}
             slideSize="80vw"
             height="auto"
             slideGap="md"
