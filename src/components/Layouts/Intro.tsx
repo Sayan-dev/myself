@@ -1,8 +1,9 @@
-import { Box, Group } from '@mantine/core';
+import { Box, Grid, Group, SimpleGrid } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
 import { Carousel } from '@mantine/carousel';
 
+import clothesstore from '../../assets/images/clothesstore.png';
 import myself from '../../assets/images/myself.png';
 
 const Intro = () => {
@@ -721,20 +722,25 @@ const Intro = () => {
         >
           <Carousel.Slide>
             <Box className="flex flex-col border border-primary-light rounded-[16px] px-5 py-10">
-              <div className="text-lg font-bold text-white mb-5">Sconto</div>
+              <div className="text-lg font-bold text-white mb-5">Clothes Store</div>
               <div className="text-faded text-sm mb-5">
-                Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro
-                com exercícios.
+                A fullStack project based on MERN with full e-commerce functionality from adding to
+                cart to ordering using razorpay webhook
               </div>
-              <Group className="mb-10">
-                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 rounded-[8px]">
+              <Grid  className="mb-10" columns={2}>
+                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
                   React JS
                 </Box>
-                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 rounded-[8px]">
-                  Typescript
+                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
+                  Node JS
                 </Box>
-              </Group>
-              <Box className="border border-primary-light h-[10rem] w-[15rem]"></Box>
+                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
+                  Mongodb
+                </Box>
+              </Grid>
+              <Box className="w-[15rem]">
+                <Image src={clothesstore} alt="clothesstore" />
+              </Box>
             </Box>
           </Carousel.Slide>
           <Carousel.Slide>
@@ -744,15 +750,20 @@ const Intro = () => {
                 Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro
                 com exercícios.
               </div>
-              <Group className="mb-10">
-                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 rounded-[8px]">
+              <Grid  className="mb-10" columns={2}>
+                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
                   React JS
                 </Box>
-                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 rounded-[8px]">
-                  Typescript
+                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
+                  Node JS
                 </Box>
-              </Group>
-              <Box className="border border-primary-light h-[10rem] w-[15rem]"></Box>
+                <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
+                  Mongodb
+                </Box>
+              </Grid>
+              <Box className="w-[15rem]">
+                <Image src={clothesstore} alt="clothesstore" />
+              </Box>
             </Box>
           </Carousel.Slide>
         </Carousel>
@@ -1033,8 +1044,7 @@ const Intro = () => {
             align="start"
             slideSize="20%"
             height="auto"
-            sx={{maxWidth: "90vw"}}
-
+            sx={{ maxWidth: '90vw' }}
             slideGap="md"
             dragFree
             withControls={false}
@@ -1187,7 +1197,7 @@ const Intro = () => {
         <div className="py-2 px-5 mt-5 mb-5 w-fit rounded-[10px] bg-primary-2 text-primary text-sm font-bold">
           💼 Career
         </div>
-        <div className="font-semibold mb-10 w-[10rem] text-2xl text-white">Trajetória até aqui</div>
+        <div className="font-semibold mb-10 w-[10rem] text-2xl text-white">My career path</div>
         <Box>
           <Box>
             <div className="text-white font-extrabold text-lg">Professional Area</div>
@@ -1205,37 +1215,37 @@ const Intro = () => {
           >
             <Carousel.Slide>
               <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-                <div className="text-lg font-bold text-white mb-2">Designer na Viralizzi</div>
+                <div className="text-lg font-bold text-white mb-2">Full Stack Developer at Sconto</div>
                 <div className="text-faded text-sm">
-                  Disponibilizando serviços para mídias digitais na Viralizzi como Designer.
+                  Being a part of the founding team building the company from scratch.
                 </div>
                 <Box className="flex flex-row justify-between mt-5">
-                  <div className="text-primary text-xs">3 months</div>
-                  <div className="text-primary text-xs">Janeiro/2021 · Abril/2021</div>
+                  <div className="text-primary text-xs">6 months</div>
+                  <div className="text-primary text-xs">May/2022 · December/2022</div>
                 </Box>
               </Box>
             </Carousel.Slide>
             <Carousel.Slide>
               <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-                <div className="text-lg font-bold text-white mb-2">Designer na Viralizzi</div>
+                <div className="text-lg font-bold text-white mb-2">Founding Engineer at Mentro</div>
                 <div className="text-faded text-sm">
-                  Disponibilizando serviços para mídias digitais na Viralizzi como Designer.
+                  Built a Startup from scratch supporting the company with the tech.
                 </div>
                 <Box className="flex flex-row justify-between mt-5">
-                  <div className="text-primary text-xs">3 months</div>
-                  <div className="text-primary text-xs">Janeiro/2021 · Abril/2021</div>
+                  <div className="text-primary text-xs">1 year</div>
+                  <div className="text-primary text-xs">December/2020 · December/2021</div>
                 </Box>
               </Box>
             </Carousel.Slide>
             <Carousel.Slide>
               <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-                <div className="text-lg font-bold text-white mb-2">Designer na Viralizzi</div>
+                <div className="text-lg font-bold text-white mb-2">Web Developer at TeamCognito</div>
                 <div className="text-faded text-sm">
-                  Disponibilizando serviços para mídias digitais na Viralizzi como Designer.
+                  Worked in different software projects including both backend and frontend responsibilities.
                 </div>
                 <Box className="flex flex-row justify-between mt-5">
                   <div className="text-primary text-xs">3 months</div>
-                  <div className="text-primary text-xs">Janeiro/2021 · Abril/2021</div>
+                  <div className="text-primary text-xs">April/2020 · July/2020</div>
                 </Box>
               </Box>
             </Carousel.Slide>
