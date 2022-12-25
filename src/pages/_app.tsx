@@ -2,6 +2,8 @@ import '../styles/globals.scss';
 import Head from 'next/head';
 import { CookiesProvider } from 'react-cookie';
 import { MantineProvider } from '@mantine/core';
+import { NotificationsProvider } from '@mantine/notifications';
+
 import React from 'react';
 import { AppPropsWithLayout } from '../types';
 
@@ -29,7 +31,7 @@ const TodosApp = ({ Component, pageProps }: AppPropsWithLayout) => {
             fontFamily: 'Poppins',
           }}
         >
-          {getLayout(<Component {...pageProps} />)}
+          <NotificationsProvider>{getLayout(<Component {...pageProps} />)}</NotificationsProvider>
         </MantineProvider>
       </CookiesProvider>
     </>
