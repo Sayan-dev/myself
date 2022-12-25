@@ -22,7 +22,7 @@ const Home: NextPageWithLayout = () => {
       </Head>
 
       <Paper className="min-h-screen px-2 w-full rounded-none bg-transparent">
-        <main style={{ padding: '0px', maxWidth: '1336px', margin: '0px auto' }}>
+        <main style={{ padding: '0px', maxWidth: '480px', margin: '0px auto', overflowX: 'hidden' }}>
             <Intro/>
             <Aboutme/>
             <WorksAndProjects/>

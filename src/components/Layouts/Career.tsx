@@ -17,8 +17,7 @@ const Career = () => {
         <Carousel
           className="mt-5"
           align="start"
-          sx={{ maxWidth: '90vw' }}
-          slideSize="80vw"
+          slideSize="80%"
           height="auto"
           slideGap="md"
           dragFree
