@@ -125,7 +125,7 @@ const Intro = () => {
       </Group>
       <Box className="flex justify-center"></Box>
       <Box className="flex flex-col mb-6">
-        <div className="py-2 px-5 my-5 w-fit rounded-[10px] bg-primary-2 text-primary font-bold">
+        <div className="py-2 px-5 my-5 w-fit rounded-[10px] border border-primary text-primary font-bold">
           👋 Hello!
         </div>
         <div className="font-bold leading-[4rem] text-[2.5rem] text-white">

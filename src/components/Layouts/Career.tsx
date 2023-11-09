@@ -15,14 +15,39 @@ const Career = () => {
           <div className="text-faded text-sm">2020 - Present</div>
         </Box>
         <Carousel
-          className="mt-5"
+          className="mt-3"
           align="start"
-          slideSize="80%"
+          slideSize="50%"
           height="auto"
           slideGap="md"
           dragFree
           withControls={false}
         >
+          <Carousel.Slide>
+            <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
+              <div className="text-lg font-bold text-white mb-2">
+                Full Stack Developer at Pixel Solutionz
+              </div>
+              <div className="text-faded text-sm">
+                Working for different clients, notably Telekom Malaysia.
+              </div>
+              <Box className="flex flex-row justify-between mt-5">
+                <div className="text-primary text-xs">Currently Working</div>
+                <div className="text-primary text-xs">January/2022 · current</div>
+              </Box>
+            </Box>
+          </Carousel.Slide>
+          <Carousel.Slide>
+            <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
+              <div className="text-lg font-bold text-white mb-2">Upwork Freelancer</div>
+              <div className="text-faded text-sm">Working on a product called MorePleaze.</div>
+              <Box className="flex flex-row justify-between mt-5">
+                <div className="text-primary text-xs">9 months</div>
+                <div className="text-primary text-xs">December/2022 · September/2022</div>
+              </Box>
+            </Box>
+          </Carousel.Slide>
+
           <Carousel.Slide>
             <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
               <div className="text-lg font-bold text-white mb-2">
@@ -53,7 +78,7 @@ const Career = () => {
             <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
               <div className="text-lg font-bold text-white mb-2">Web Developer at TeamCognito</div>
               <div className="text-faded text-sm">
-                Worked in both backend and frontend projects.
+                Worked as SDE in both backend and frontend projects.
               </div>
               <Box className="flex flex-row justify-between mt-5">
                 <div className="text-primary text-xs">3 months</div>

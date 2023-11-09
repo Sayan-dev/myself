@@ -22,17 +22,17 @@ const WorksAndProjects = () => {
         withControls={false}
       >
         <Carousel.Slide>
-          <Box className="border border-primary-light px-2 py-3 rounded-[8px] text-primary-light text-sm justify-center flex">
+          <Box className="justify-center bg-primary-2 flex border border-primary-light px-2 py-3 rounded-[8px] text-primary text-sm">
             Frontend
           </Box>
         </Carousel.Slide>
         <Carousel.Slide>
-          <Box className="justify-center flex border border-primary-light px-2 py-3 rounded-[8px] text-primary-light text-sm">
+          <Box className="justify-center bg-primary-2 flex border border-primary-light px-2 py-3 rounded-[8px] text-primary text-sm">
             Backend
           </Box>
         </Carousel.Slide>
         <Carousel.Slide>
-          <Box className="justify-center flex border border-primary-light px-2 py-3 rounded-[8px] text-primary-light text-sm">
+          <Box className="justify-center bg-primary-2 flex border border-primary-light px-2 py-3 rounded-[8px] text-primary text-sm">
             Full Stack
           </Box>
         </Carousel.Slide>
