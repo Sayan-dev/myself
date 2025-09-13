@@ -1,6 +1,7 @@
 import { Carousel } from '@mantine/carousel';
 import { Box } from '@mantine/core';
 import React from 'react';
+import { CAREER_LIST } from '../../data/career.constants';
 
 const Career = () => {
   return (
@@ -17,75 +18,30 @@ const Career = () => {
         <Carousel
           className="mt-3"
           align="start"
-          slideSize="50%"
+          slideSize="60%"
           height="auto"
           slideGap="md"
           dragFree
           withControls={false}
         >
-          <Carousel.Slide>
-            <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-              <div className="text-lg font-bold text-white mb-2">
-                Full Stack Developer at Pixel Solutionz
-              </div>
-              <div className="text-faded text-sm">
-                Working for different clients, notably Telekom Malaysia.
-              </div>
-              <Box className="flex flex-row justify-between mt-5">
-                <div className="text-primary text-xs">Currently Working</div>
-                <div className="text-primary text-xs">January/2022 · current</div>
+          {CAREER_LIST.map((career)=>(
+            <Carousel.Slide>
+              <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
+                <div className="text-lg font-bold text-white mb-2">
+                  {career.title}
+                </div>
+                <div className="text-faded text-sm">
+                 {career.description}
+                </div>
+                <Box className="flex flex-row justify-between mt-5">
+                  <div className="text-primary text-xs">{career.currentlyWorking}</div>
+                  <div className="text-primary text-xs">{career.duration}</div>
+                </Box>
               </Box>
-            </Box>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-              <div className="text-lg font-bold text-white mb-2">Upwork Freelancer</div>
-              <div className="text-faded text-sm">Working on a product called MorePleaze.</div>
-              <Box className="flex flex-row justify-between mt-5">
-                <div className="text-primary text-xs">9 months</div>
-                <div className="text-primary text-xs">December/2022 · September/2022</div>
-              </Box>
-            </Box>
-          </Carousel.Slide>
+            </Carousel.Slide>
+          ))}
 
-          <Carousel.Slide>
-            <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-              <div className="text-lg font-bold text-white mb-2">
-                Full Stack Developer at Sconto
-              </div>
-              <div className="text-faded text-sm">
-                Being a part of the founding team building the company from scratch.
-              </div>
-              <Box className="flex flex-row justify-between mt-5">
-                <div className="text-primary text-xs">6 months</div>
-                <div className="text-primary text-xs">May/2022 · December/2022</div>
-              </Box>
-            </Box>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-              <div className="text-lg font-bold text-white mb-2">Founding Engineer at Mentro</div>
-              <div className="text-faded text-sm">
-                Built from scratch supporting the company with the tech.
-              </div>
-              <Box className="flex flex-row justify-between mt-5">
-                <div className="text-primary text-xs">1 year</div>
-                <div className="text-primary text-xs">December/2020 · December/2021</div>
-              </Box>
-            </Box>
-          </Carousel.Slide>
-          <Carousel.Slide>
-            <Box className="flex flex-col border border-primary-light rounded-[16px] p-5">
-              <div className="text-lg font-bold text-white mb-2">Web Developer at TeamCognito</div>
-              <div className="text-faded text-sm">
-                Worked as SDE in both backend and frontend projects.
-              </div>
-              <Box className="flex flex-row justify-between mt-5">
-                <div className="text-primary text-xs">3 months</div>
-                <div className="text-primary text-xs">April/2020 · July/2020</div>
-              </Box>
-            </Box>
-          </Carousel.Slide>
+
         </Carousel>
       </Box>
     </Box>

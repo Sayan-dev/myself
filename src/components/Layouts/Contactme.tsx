@@ -40,7 +40,7 @@ const Contactme = () => {
       <div className="py-2 px-5 mt-5 mb-5 w-fit rounded-[10px] bg-primary-2 text-primary text-sm font-bold">
         📬 Contacts
       </div>
-      <Group onClick={()=>handleCopyClick("8100838105", "Contacts copied to clipboard")} className="text-[16px] mb-5 px-2 py-3 rounded-[10px] border text-primary-light">
+      <Group onClick={()=>handleCopyClick("6290982663", "Contacts copied to clipboard")} className="text-[16px] mb-5 px-2 py-3 rounded-[10px] border text-primary-light cursor-pointer">
         <span>
           <svg
             width="24"
@@ -100,7 +100,8 @@ const Contactme = () => {
             viewBox="0 0 16 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            onClick={()=>handleCopyClick("sayanta2702@gmail.com", "Email copied to clipboard")}
+            onClick={()=>handleCopyClick("sayandev200@gmail.com", "Email copied to clipboard")}
+            className="cursor-pointer"
           >
             <path
               d="M13.5 11.5V2.5H4.5"

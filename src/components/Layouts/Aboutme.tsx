@@ -1,12 +1,15 @@
 import { Box } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
-import myself from '../../assets/images/myself.png';
+import myself from '../../assets/images/Sayanta_Bhattacharjee.jpg';
 
 const Aboutme = () => {
   return (
     <Box className="flex flex-col items-center mt-16">
-      <Image src={myself} alt="myself" />
+
+      <Image style={{
+        borderRadius:'50%'
+      }} width={300} height={300} src={myself} alt="myself" className='rounded-full'/>
       <Box className="flex flex-col mt-6">
         <div className="py-2 px-5 mt-5 mb-5 w-fit rounded-[10px] bg-primary-2 text-primary font-bold text-sm">
           👋 About Me!

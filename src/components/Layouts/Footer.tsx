@@ -87,7 +87,7 @@ const Footer = () => {
           </Box>
         </a>
       </Group>
-      <div className="text-faded text-xs">Copyright © Sayanta Bhattacharjee · 2022</div>
+      <div className="text-faded text-xs">Copyright © Sayanta Bhattacharjee · {new Date().getFullYear()}</div>
     </Box>
   );
 };

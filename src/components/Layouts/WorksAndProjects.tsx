@@ -4,6 +4,7 @@ import clothesstore from '../../assets/images/clothesstore.png';
 
 import React from 'react';
 import Image from 'next/image';
+import { WORK_LIST } from '../../data/work.constants';
 
 const WorksAndProjects = () => {
   return (
@@ -45,30 +46,31 @@ const WorksAndProjects = () => {
         dragFree
         withControls={false}
       >
-        <Carousel.Slide>
-          <Box className="flex flex-col border border-primary-light rounded-[16px] px-5 py-8">
-            <div className="text-lg font-bold text-white mb-5">Clothes Store</div>
-            <div className="text-faded text-sm mb-5">
-              A fullStack project based on MERN with full e-commerce functionality from adding to
-              cart to ordering using razorpay webhook
-            </div>
-            <Grid className="mb-10" columns={2}>
-              <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
-                React JS
+        {
+          WORK_LIST.map((work)=>(
+            <Carousel.Slide>
+              <Box className="flex flex-col border border-primary-light rounded-[16px] px-5 py-8">
+                <div className="text-lg font-bold text-white mb-5">{work.title}</div>
+                <div className="text-faded text-sm mb-5">
+                  {work.description}
+                </div>
+                <Grid className="mb-10" columns={2}>
+                  {work.tech.map(e=>(
+                    <div className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
+                      {e}
+                    </div>
+                    ))
+                  }
+                </Grid>
+                <Box className="w-[15rem]">
+                  <Image src={work.image} alt="clothesstore" />
+                </Box>
+                <a className="text-primary-light text-sm font-bold mt-2" href={work.link}>Visit Site</a>
               </Box>
-              <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
-                Node JS
-              </Box>
-              <Box className="bg-primary-2 text-xs text-primary px-5 py-2 m-2 rounded-[8px]">
-                Mongodb
-              </Box>
-            </Grid>
-            <Box className="w-[15rem]">
-              <Image src={clothesstore} alt="clothesstore" />
-            </Box>
-            <a className="text-primary-light text-sm font-bold mt-2" href="https://sayan-dev.github.io/Clothes-Store-frontend/">Visit Site</a>
-          </Box>
-        </Carousel.Slide>
+            </Carousel.Slide>
+          ))
+        }
+
       </Carousel>
     </Box>
   );

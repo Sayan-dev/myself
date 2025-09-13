@@ -101,7 +101,7 @@ const Skills = () => {
         <Carousel
           className="mt-5"
           align="start"
-          slideSize="20%"
+          slideSize="5%"
           height="auto"
           sx={{ maxWidth: '90vw' }}
           slideGap="md"

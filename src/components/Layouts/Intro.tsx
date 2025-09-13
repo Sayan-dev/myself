@@ -136,7 +136,7 @@ const Intro = () => {
       <Group>
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1XsXB_a_88Zul7PFj0tcs_tzLUkwjwB8R/view?usp=share_link"
+          href="https://drive.google.com/file/d/1XsXB_a_88Zul7PFj0tcs_tzLUkwjwB8R/view?usp=sharing"
           download={'Sayanta_Bhattacharjee'}
         >
           <Group className="text-lg text-primary-light">
@@ -174,8 +174,8 @@ const Intro = () => {
         </a>
 
         <Group
-          onClick={() => handleCopyClick('8100838105', 'Contacts copied to clipboard')}
-          className="text-lg px-2 py-3 rounded-[10px] border text-primary-light"
+          onClick={() => handleCopyClick('6290982663', 'Contacts copied to clipboard')}
+          className="text-lg px-2 py-3 rounded-[10px] border text-primary-light cursor-pointer"
         >
           <span>
             <svg
@@ -277,7 +277,7 @@ const Intro = () => {
             </defs>
           </svg>
           <div className="text-white text-lg mt-2 ">3 years as</div>
-          <div className="text-white text-2xl font-bold">Programmer</div>
+          <div className="text-white text-2xl font-bold">Full-Stack Engineer</div>
         </Box>
       </Box>
     </Box>
