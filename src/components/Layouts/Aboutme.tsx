@@ -1,7 +1,7 @@
 import { Box } from '@mantine/core';
 import Image from 'next/image';
 import React from 'react';
-import myself from '../../assets/images/Sayanta_Bhattacharjee.jpg';
+import myself from '../../assets/images/Sayanta.jpg';
 
 const Aboutme = () => {
   return (
